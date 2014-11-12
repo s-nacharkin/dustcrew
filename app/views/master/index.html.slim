@@ -1,5 +1,12 @@
-body.keygen ng-app="jackband"
-  .btn.btn-default.btn-lg.hit sample="kick" keycode="81"
-    span.glyphicon.glyphicon-star
-  .btn.btn-default.btn-lg.hit sample="bash" keycode="87"
-    span.glyphicon.glyphicon-star
+body.keygen ng-app="dustcrew"
+  .panel.panel-default
+    .panel-heading Taping
+    .panel-body
+      .btn.btn-default ng-controller="hit as h" ng-click="h.do()" sample="kick" keycode="89" Y
+      .btn.btn-default ng-controller="hit as h" ng-click="h.do()" sample="bash" keycode="85" U
+  .panel.panel-default
+    .panel-heading Recording
+    .panel-body
+      .btn-group ng-controller="rec as r"
+        .rec-rec.btn ng-class="{true: 'btn-danger', false: 'btn-default'}[r.in_rec]" ng-click="r.rec()" keycode="81" Q
+        .rec-rec.btn ng-class="{true: 'btn-primary', false: 'btn-default'}[r.in_play]" ng-click="r.play()" keycode="87" W
