@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'master#index'
   get 'master/show'
+  get 'master/do'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

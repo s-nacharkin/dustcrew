@@ -1,12 +1,69 @@
 body.keygen ng-app="dustcrew"
   .panel.panel-default
-    .panel-heading Taping
+    .panel-heading Stupid simple sempler
     .panel-body
-      .btn.btn-default ng-controller="hit as h" ng-click="h.do()" sample="kick" keycode="89" Y
-      .btn.btn-default ng-controller="hit as h" ng-click="h.do()" sample="bash" keycode="85" U
-  .panel.panel-default
-    .panel-heading Recording
-    .panel-body
-      .btn-group ng-controller="rec as r"
-        .rec-rec.btn ng-class="{true: 'btn-danger', false: 'btn-default'}[r.in_rec]" ng-click="r.rec()" keycode="81" Q
-        .rec-rec.btn ng-class="{true: 'btn-primary', false: 'btn-default'}[r.in_play]" ng-click="r.play()" keycode="87" W
+      p Just hit keys. 5 record-playloop-mute tracks and 15 playonce tracks
+    table.table
+      tr
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="0" cmdname="record" keycode="81" Q
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="1" cmdname="record" keycode="87" W
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="2" cmdname="record" keycode="69" E
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="3" cmdname="record" keycode="82" R
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="4" cmdname="record" keycode="84" T
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="5" cmdname="oneshot" keycode="89" Y
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="6" cmdname="oneshot" keycode="85" U
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="7" cmdname="oneshot" keycode="85" U
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="8" cmdname="oneshot" keycode="73" U
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="9" cmdname="oneshot" keycode="79" U
+      tr
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="0" cmdname="trigger" keycode="65" A
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="1" cmdname="trigger" keycode="83" S
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="2" cmdname="trigger" keycode="68" D
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="3" cmdname="trigger" keycode="70" F
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="4" cmdname="trigger" keycode="71" G
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="10" cmdname="oneshot" keycode="72" H
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="11" cmdname="oneshot" keycode="74" J
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="12" cmdname="oneshot" keycode="75" K
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="13" cmdname="oneshot" keycode="76" L
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="14" cmdname="oneshot" keycode="186" | :
+      tr
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="0" cmdname="mute" keycode="90" Z
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="1" cmdname="mute" keycode="88" X
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="2" cmdname="mute" keycode="67" C
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="3" cmdname="mute" keycode="86" V
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="4" cmdname="mute" keycode="66" B
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="15" cmdname="mute" keycode="78" N
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="16" cmdname="mute" keycode="77" M
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="17" cmdname="mute" keycode="188" | <
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="18" cmdname="mute" keycode="190" | >
+        td
+          .btn.btn-default ng-controller="jack as j" ng-click="j.do()" track="19" cmdname="mute" keycode="191" | ?

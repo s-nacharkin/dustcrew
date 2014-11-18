@@ -55,3 +55,9 @@ gem 'angularjs-rails'
 
 # Use underscore
 gem 'underscore-rails'
+
+# Use for OSC client
+gem 'ruby-osc', '~> 0.31.0'
+
+# Use gon for data exchange
+gem 'gon'
