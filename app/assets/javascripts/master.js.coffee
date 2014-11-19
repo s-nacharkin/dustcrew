@@ -20,11 +20,16 @@ dustcrew.directive "keygen", ()->
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
-dustcrew.controller "hit", ["$attrs", "play", ($attrs, play)->
-  @samle = $attrs.sample
+dustcrew.controller "jack", ["$attrs", ($attrs)->
+  @track = $attrs.track
+  @cmdname = $attrs.cmdname
   @do = ()->
-    play @samle
-    on
+    $.ajax
+      url: gon.do_path
+      type: "GET"
+      data:
+        track: @track
+        cmdname: @cmdname
 ]
 
 # -----------------------------------------------------------------------------
